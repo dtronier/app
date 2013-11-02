@@ -77,4 +77,8 @@ App::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  # Note to set it to the actual host
+   config.action_mailer.default_url_options = { :host => 'http://barsport-testsite.herokuapp.com' }
+
 end
